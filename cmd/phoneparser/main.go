@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nyaruka/phonenumbers"
+	"github.com/aikikode/phonenumbers"
 )
 
 func main() {
