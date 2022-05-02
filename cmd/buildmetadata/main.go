@@ -32,10 +32,10 @@ type prefixBuild struct {
 }
 
 const (
-	metadataURL  = "https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/PhoneNumberMetadata.xml"
+	metadataURL  = "https://raw.githubusercontent.com/google/libphonenumber/master/resources/PhoneNumberMetadata.xml"
 	metadataPath = "metadata_bin.go"
 
-	tzURL  = "https://raw.githubusercontent.com/googlei18n/libphonenumber/master/resources/timezones/map_data.txt"
+	tzURL  = "https://raw.githubusercontent.com/google/libphonenumber/master/resources/timezones/map_data.txt"
 	tzPath = "prefix_to_timezone_bin.go"
 	tzVar  = "timezoneMapData"
 
@@ -44,14 +44,14 @@ const (
 )
 
 var carrier = prefixBuild{
-	url:     "https://github.com/googlei18n/libphonenumber/trunk/resources/carrier",
+	url:     "https://github.com/google/libphonenumber/trunk/resources/carrier",
 	dir:     "carrier",
 	srcPath: "prefix_to_carriers_bin.go",
 	varName: "carrierMapData",
 }
 
 var geocoding = prefixBuild{
-	url:     "https://github.com/googlei18n/libphonenumber/trunk/resources/geocoding",
+	url:     "https://github.com/google/libphonenumber/trunk/resources/geocoding",
 	dir:     "geocoding",
 	srcPath: "prefix_to_geocodings_bin.go",
 	varName: "geocodingMapData",
